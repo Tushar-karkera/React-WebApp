@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard';
 import ColorSharp2 from '../assets/img/color-sharp2.png';
 import TrackVisibility from 'react-on-screen';
 import 'animate.css'
-import { third } from '../assets/StudyMaterial';
+import { third ,fourth,fifth,sixth,seventh,eigth} from '../assets/StudyMaterial';
 
 
 
@@ -61,7 +61,7 @@ const Project = () => {
                                 <Tab.Pane eventKey="fourth">
                                     <Row>
                                         {
-                                            third.map((project, index) => {
+                                            fourth.map((project, index) => {
                                                 return (
                                                     <ProjectCard
                                                         key={index}
@@ -75,7 +75,7 @@ const Project = () => {
                                 <Tab.Pane eventKey="fifth">
                                     <Row>
                                         {
-                                            third.map((project, index) => {
+                                            fifth.map((project, index) => {
                                                 return (
                                                     <ProjectCard
                                                         key={index}
@@ -89,7 +89,7 @@ const Project = () => {
                                 <Tab.Pane eventKey="sixth">
                                     <Row>
                                         {
-                                            third.map((project, index) => {
+                                            sixth.map((project, index) => {
                                                 return (
                                                     <ProjectCard
                                                         key={index}
@@ -103,7 +103,7 @@ const Project = () => {
                                 <Tab.Pane eventKey="seventh">
                                     <Row>
                                         {
-                                            third.map((project, index) => {
+                                            seventh.map((project, index) => {
                                                 return (
                                                     <ProjectCard
                                                         key={index}
@@ -117,7 +117,7 @@ const Project = () => {
                                 <Tab.Pane eventKey="eigth">
                                     <Row>
                                         {
-                                            third.map((project, index) => {
+                                            eigth.map((project, index) => {
                                                 return (
                                                     <ProjectCard
                                                         key={index}
