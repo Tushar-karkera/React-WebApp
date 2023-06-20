@@ -268,6 +268,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
 
+
+
 /************ Banner Css ************/
 
 .custom-heading {
@@ -839,4 +841,13 @@ ul.team-icon li a.dribble{
 	-ms-transition: all 0.25s ease-in-out;
 	-o-transition: all 0.25s ease-in-out;
 	transition: all 0.25s ease-in-out;
+}
+
+
+/* ////////////////// */
+
+@media only screen and (max-width: 600px) {
+  .access-logo {
+   min-width: 100px;
+  }
 }
