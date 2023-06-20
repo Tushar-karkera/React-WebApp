@@ -1,9 +1,9 @@
 import React from 'react';
-import { useState ,useEffect } from 'react';
-import { Navbar, Container ,Nav,NavDropdown} from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
+import { useState, useEffect } from 'react';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import logo from '../assets/img/Access.png';
 import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
+import navIcon2 from '../assets/img/github-mark-white.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
 const NavBar = () => {
@@ -35,20 +35,22 @@ const NavBar = () => {
                 </Navbar.Toggle>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">
-                        <Nav.Link href="#home" className={active == 'home' ? "active navbar-link" : "navbar-link"} onClick={() => { setActive('home') }}>Home</Nav.Link>
-                        <Nav.Link href="#skills" className={active == 'skills' ? "active navbar-link" : "navbar-link"} onClick={() => { setActive('skills') }}>Skills</Nav.Link>
-                        <Nav.Link href="#projects" className={active == 'projects' ? "active navbar-link" : "navbar-link"} onClick={() => { setActive('projects') }}>Projects</Nav.Link>
+                        <Nav.Link href="#home" className={active === 'home' ? "active navbar-link" : "navbar-link"} onClick={() => { setActive('home') }}>Home</Nav.Link>
+                        <Nav.Link href="#skills" className={active === 'skills' ? "active navbar-link" : "navbar-link"} onClick={() => { setActive('skills') }}>Expertise</Nav.Link>
+                        <Nav.Link href="#project" className={active === 'projects' ? "active navbar-link" : "navbar-link"} onClick={() => { setActive('projects') }}>Study Materials</Nav.Link>
                     </Nav>
                     <span className='navbar-text'>
                         <div className="social-icon">
                             <a href="#"><img src={navIcon1} alt="" /></a>
-                            <a href="#"><img src={navIcon2} alt="" /></a>
+                            <a href="https://github.com/Tushar-karkera/React-WebApp"><img src={navIcon2} alt="" /></a>
                             <a href="#"><img src={navIcon3} alt="" /></a>
                         </div>
-                        <button className='vvd' onClick={console.log('connect')}>
-                            <span>
-                                lets connect
-                            </span>
+                        <button className='vvd' onClick={console.log('connect')} >
+                            <a href="mailto:email@example.com" className='text-white'>
+                                <span>
+                                    lets connect
+                                </span>
+                            </a>
                         </button>
                     </span>
                 </Navbar.Collapse>

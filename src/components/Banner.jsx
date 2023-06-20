@@ -1,19 +1,18 @@
 import React from 'react';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
-import headerImg from "../assets/img/header-img.svg";
 import { useState, useEffect } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import { isVisible } from '@testing-library/user-event/dist/utils';
+import heading from "../assets/img/heading.svg"
 
 const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
 
-    const toRotate = ["Web developer", "Network Geek", "Backend Developer"];
+    const toRotate = ["Telecom Networks", "Cybersecurity", "Wireless Technology"];
     const [text, setText] = useState('');
-    const [delta, setDelta] = useState(200 - Math.random() * 100);
+    const [delta, setDelta] = useState(200 - Math.random() * 200);
     const period = 1000;
 
     useEffect(() => {
@@ -41,7 +40,7 @@ const Banner = () => {
         else if (isDeleting && updatedText === '') {
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(200);
         }
     }
 
@@ -51,31 +50,33 @@ const Banner = () => {
         <section className='banner' id='home'>
             <Container>
                 <Row className='align-items-center'>
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={6} xl={7} >
                         <TrackVisibility>
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                                    <span className='tagline'>Welcone to my Portfolio</span>
+                                    <span className='tagline'>Welcome to CCE</span>
                                     <h1>
-                                        {`Hi I am TUSHAR `}
+                                        {`We focus on`}
                                         <br />
-                                        <span className='wrap'>
+                                        <div className='wrap custom-heading'>
                                             {text}
-                                        </span>
+                                        </div>
                                     </h1>
                                     <p>
-                                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab laborum, cumque error porro dolorum ut possimus explicabo aut deleniti! Quo aliquam exercitationem vitae dolores praesentium.
+                                        
                                     </p>
                                     <button onClick={() => console.log("connect")}>
-                                        Let's connect
-                                        <ArrowRightCircle size={25} />
+                                        <a href="https://github.com/Tushar-karkera" style={{textDecoration:"none",color:"white"}}>
+                                            Lets Ascend
+                                            <ArrowRightCircle size={25} />
+                                        </a>
                                     </button>
                                 </div>
                             }
                         </TrackVisibility>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
-                        <img src={headerImg} alt="Header img" />
+                        <img src={heading} alt="Header img" />
                     </Col>
                 </Row>
             </Container>

@@ -38,30 +38,30 @@ const Skills = () => {
                             {({ isVisible }) =>
                                 <div className={isVisible ? "animate__animated animate__slideInDown" : ""}>
                             <h2>
-                                skills
+                                OUR INTERESTS ARE ON
                             </h2>
                             </div>
                             }
                         </TrackVisibility>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores, doloribus. Consequatur eos vero doloremque dignissimos.
+                            The program provides experiential learning on basic and advanced courses in computer science, communication networks, security and associated subjects.
                             </p>
                             <Carousel responsive={responsive} infinite={true} className='skill-slider'>
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <h5>Network Engineering</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image" />
-                                    <h5>Brand Identity</h5>
+                                    <h5>CyberSecurity</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="Image" />
-                                    <h5>Logo Design</h5>
+                                    <h5>Telecom Networks</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Web Development</h5>
+                                    <h5>Wrireless Technologies</h5>
                                 </div>
                             </Carousel>
                         </div>

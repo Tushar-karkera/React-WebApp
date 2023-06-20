@@ -9,15 +9,6 @@ const Newsletter = ({ onValidate, status, message }) => {
         if(status === 'success') clearField();
     },[status])
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        email &&
-            email.indexOf("@") > -1 &&
-            onValidate({
-                EMAIL: email
-            })
-
-    }
 
     const clearField = () => {
         setemail('');
@@ -40,7 +31,7 @@ const Newsletter = ({ onValidate, status, message }) => {
                         }
                     </Col>
                     <Col md={6} xl={7}>
-                        <form onSubmit={handleSubmit}>
+                        <form >
                             <div className="new-email-bx">
                                 <input value={email} onChange={(e) => setemail(e.target.value)} placeholder='email address' />
                                 <button type='submit'>Submit</button>

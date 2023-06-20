@@ -25,26 +25,6 @@ const Contact = () => {
         );
     }
 
-    const handleSubmit = async (e) => {
-        e.preventDefault();
-        setButtonText('Sending....');
-        let response = await fetch("http://localhost:5000/contact", {
-            method: "POST",
-            headers: {
-                "Content-type": "Application/json;charset=utf-8",
-            },
-            body: JSON.stringify(formDetails),
-        });
-
-        setButtonText("Send");
-        let result = response.json();
-        setFormDetails(formInitialDetails);
-        if(result.code === 200) {
-            setStatus({success:true , message:"Message sent successfully"});
-        }else {
-            setStatus({success:false , message:"something went wrong"});
-        }
-    };
 
     return (
         <section className='contact' id='connect'>
@@ -55,7 +35,7 @@ const Contact = () => {
                     </Col>
                     <Col md={6}>
                         <h2>Get in Touch</h2>
-                        <form onSubmit={handleSubmit} method="post" action='/contact'>
+                        <form>
                             <Row>
                                 <Col sm={6} className='px-1'>
                                     <input type="text" value={formDetails.firstName} placeholder='First Name' onChange={(e) => onFormUpdate('firstName', e.target.value)} />
@@ -71,7 +51,7 @@ const Contact = () => {
                                 </Col>
                                 <Col>
                                     <textarea rows={6} value={formDetails.message} placeholder='message' onChange={(e) => onFormUpdate('message', e.target.value)} />
-                                    <button type='submit'>{buttonText}</button>
+                                    <button >{buttonText}</button>
                                 </Col>
                                 {
                                     status.message &&
