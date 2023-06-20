@@ -46,7 +46,7 @@ const NavBar = () => {
                             <a href="http://www.instagram.com/access__nmamit/"><img src={navIcon3} alt="" /></a>
                         </div>
                         <button className='vvd' onClick={console.log('connect')} >
-                            <a href="mailto:email@example.com" className='text-white'>
+                            <a href="mailto:tusharvkarkera2@gmail.com" className='text-white'>
                                 <span>
                                     lets connect
                                 </span>
