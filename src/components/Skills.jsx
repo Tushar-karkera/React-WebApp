@@ -61,7 +61,7 @@ const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Wrireless Technologies</h5>
+                                    <h5>Wireless Technologies</h5>
                                 </div>
                             </Carousel>
                         </div>

@@ -43,7 +43,7 @@ const NavBar = () => {
                         <div className="social-icon">
                             <a href="#"><img src={navIcon1} alt="" /></a>
                             <a href="https://github.com/Tushar-karkera/React-WebApp"><img src={navIcon2} alt="" /></a>
-                            <a href="#"><img src={navIcon3} alt="" /></a>
+                            <a href="http://www.instagram.com/access__nmamit/"><img src={navIcon3} alt="" /></a>
                         </div>
                         <button className='vvd' onClick={console.log('connect')} >
                             <a href="mailto:email@example.com" className='text-white'>

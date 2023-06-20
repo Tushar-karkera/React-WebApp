@@ -634,6 +634,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 100%;
 }
 
+.contact .form-btn:hover {
+  color: white;
+}
 /************ Footer Css ************/
 .footer {
   padding: 0 0 50px 0;

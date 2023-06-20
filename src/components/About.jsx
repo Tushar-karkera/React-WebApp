@@ -62,7 +62,7 @@ function Services() {
 
               <img src={ranjith} className="team-img" alt="pic" />
 
-              <h3>RANJITH BK</h3>
+              <h3>RANJITH B KUMBLE</h3>
 
               <div className="team-info"><p>Maintainer and Organiser</p></div>
 
