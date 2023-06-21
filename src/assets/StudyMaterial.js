@@ -64,6 +64,12 @@ const third = [
         imgUrl: subject1,
         link:"https://drive.google.com/drive/folders/1OE8m0oTarIAcdgcZqihwyDTiP-0vBNf7?usp=sharing"
     },
+    {
+        title: "PREVIOUS YEAR QUESTION PAPERS",
+        description: "PYQ PAPERS",
+        imgUrl: subject3,
+        link:"https://drive.google.com/drive/folders/1TAvJsKjMLJdaV2k6puN0fBtGHwOT8rF3?usp=sharing"
+    },
 ];
 
 const fourth = [
@@ -118,6 +124,12 @@ const fourth = [
         link:"https://drive.google.com/drive/folders/18cNMK79DHz9o9J5HWgOcDnxwuAQme0GP?usp=sharing"
         
     },
+    {
+        title: "PREVIOUS YEAR QUESTION PAPERS",
+        description: "PYQ PAPERS",
+        imgUrl: subject4,
+        link:"https://drive.google.com/drive/folders/1h2VnDWvkWLCwKTrVNZXlyGDkc9PrDdwj?usp=sharing"
+    },
 ];
 
 const fifth = [
@@ -170,6 +182,12 @@ const fifth = [
         imgUrl: subject1,
         link:"https://drive.google.com/drive/folders/1Nz_bllHnS2xPc_p4vRZ5vsTDKBhAYbnz?usp=sharing"
         
+    },
+    {
+        title: "PREVIOUS YEAR QUESTION PAPERS",
+        description: "PYQ PAPERS",
+        imgUrl: subject6,
+        link:"https://drive.google.com/drive/folders/1Vy5tEW1UNP_-VZxGT_Gf_05q5QB_GC3a?usp=sharing"
     },
 ];
 
@@ -231,6 +249,12 @@ const sixth = [
         imgUrl: subject6,
         link:"https://drive.google.com/drive/folders/1bZK7Z4-c8XFqKL9tWUnKiy47Py7hvZ8_?usp=sharing"
         
+    },
+    {
+        title: "PREVIOUS YEAR QUESTION PAPERS",
+        description: "PYQ PAPERS",
+        imgUrl: subject1,
+        link:"https://drive.google.com/drive/folders/17JOGb1B5L8xVpxt5WbQoCrbN6LKGmt0o?usp=sharing"
     },
 ];
 
